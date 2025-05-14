@@ -1,4 +1,4 @@
-# documentation: virtual machines
+# Virtual machines
 
 The university provides virtual machines, which will have direct access to the shared drive. 
 
@@ -10,16 +10,16 @@ This is great as access to the drive is much faster than using VPN + mounting th
 
 ## R library
 
-The idea is to use an R library that is permanently saved on the shared drive:
+The idea is to use an R library that is permanently saved on the shared drive: `shared_projects/R_shared_lib`. This is done automatically in the `.Rprofile` file in each project.
 
+To do it manually:
 ```
 r_vers <- paste0(R.Version()[c("major","minor")], collapse = ".")
-my_lib_path <- file.path("Z:/shared_projects/R_shared_lib",r_vers)
-if(!dir.exists(my_lib_path)) dir.create(my_lib_path)
-.libPaths( c( .libPaths(), my_lib_path) )
+shared_lib_path <- file.path("Z:/shared_projects/R_shared_lib",r_vers)
+.libPaths( c( .libPaths(), shared_lib_path) )
 ```
 
-Where Z is the letter linked to the shared drive. 
+Where `Z` is the letter linked to the shared drive. 
 
 ## Machines
 
