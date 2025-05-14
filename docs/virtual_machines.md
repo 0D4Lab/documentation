@@ -1,6 +1,8 @@
 # documentation: virtual machines
 
-The university provides vritual machiens that will have direct access to the shared drive. This is great as access to the drive is much faster than using VPN and mounting the shared drive on your local machine. But the issue is that these VM reload each time, and thus do not save preference files, R liraries, etc. This concerns in particular:
+The university provides virtual machines, which will have direct access to the shared drive. 
+
+This is great as access to the drive is much faster than using VPN + mounting the shared drive on your local machine. But the issue is that these VM do not save any files, and thus do not save preference files, R liraries, etc. This concerns in particular:
 
 - Your Rstudio prefrence files: shortcuts, last project, snippets
 - The R library
@@ -18,3 +20,10 @@ if(!dir.exists(my_lib_path)) dir.create(my_lib_path)
 ```
 
 Where Z is the letter linked to the shared drive. 
+
+## Machines
+
+You should have access to the following: 
+
+- `GSEM-2024`: the standard student VM
+- `GPU-1`: much more powerful, with 64 GB 
