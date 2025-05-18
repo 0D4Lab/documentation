@@ -26,4 +26,26 @@ Where `Z` is the letter linked to the shared drive.
 You should have access to the following: 
 
 - `GSEM-2024`: the standard student VM
-- `GPU-1`: much more powerful, with 64 GB 
+- `GPU-1`: much more powerful, with 64 GB
+
+## Using `git` on a VM
+
+The best way to `pull`/`push` is using the ssh protocol. This will involve:
+
+1. Creating a ssh key
+2. sending it to ghitub
+3. Then do the `pull`/`push`
+
+This is more complicated on the VM as the ssh key is not necessarily stored. I recommend saving in on your personnal H drive
+
+Steps:
+
+1. Create key: `ssh-keygen -t ed25519 -C "your.email@unige.ch" -f /h/SSH/id_ed25519`
+2. send to github: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+3. Add it to the ssh-agent: `eval $(ssh-agent -s)
+ssh-add /h/SSH/id_ed25519`
+4. Check: `ssh -T git@github.com`
+
+Currently, you will need to run the two lines `eval $(ssh-agent -s)
+ssh-add /h/SSH/id_ed25519` every time you reboot the machine
+
