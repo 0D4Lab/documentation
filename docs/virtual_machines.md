@@ -29,7 +29,7 @@ You should have access to the following:
 - `GSEM-2024`: the standard student VM
 - `GPU-1`: much more powerful, with 64 GB
 
-## Using rstdudio shortcuts on a VM
+## Using rStudio shortcuts on a VM
 
 Unfortunately, shortcuts and the list of previous projects and scripts are not permanent on the VM... There is a complicated workaround:
 
