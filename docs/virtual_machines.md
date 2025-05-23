@@ -39,7 +39,7 @@ Unfortunately, shortcuts and the list of previous projects and scripts are not p
 3. at the beginning of every VM, copy from `H` to the (temporary) preference files
 4. If you update the shortcuts, or use often other projects/scripts, restart step 1
 
-Find here the full script, which I use every time I launch a VM: https://raw.githubusercontent.com/0D4Lab/documentation/refs/heads/main/docs/sync_Rstudio_prefs.R
+Find here the full script, which I use every time I launch a VM: [link](https://raw.githubusercontent.com/0D4Lab/documentation/refs/heads/main/docs/sync_Rstudio_prefs.R)
 
 
 
